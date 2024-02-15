@@ -1,0 +1,350 @@
+.logo {
+    width: 40px;
+}
+.container {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navLetters {
+    margin-left: 400px;
+    font-size: 18px;
+    color: #446381;
+    cursor: pointer;
+}
+.nav-item {
+  transform: 
+  scale(1);
+  transition: 1s ease all;
+  animation-name: items;
+
+  &:hover {
+      transform: 
+      translateY(3px)
+      ;
+      border-bottom: 1px solid #446381;
+  }
+}
+
+body {
+        position: absolute;
+        background-image: url(https://live.verstaem.online/gogames/img/hero-bg.jpg);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+      }
+.mainInfo {
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+.articleInfo {
+  margin-top: 5rem;
+  font-weight: bold;
+  max-width: 500px;
+}
+.boyPlaying{
+  max-width: 700px;
+  animation-name: didi;
+  animation-duration: 3s;
+}
+@keyframes didi {
+  from {
+    transform: scale(1) translateY(150px);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(1) translateY(0px);
+    opacity: 1; 
+  }
+}
+.bn632-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn25 {
+  background-image: linear-gradient(
+    to left,
+    #4499d9,
+    #4499d9,
+    #7367be
+  );
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+
+
+.loader {
+  width: 80px;
+  aspect-ratio: 1;
+  --c:#eb8382 98%,#0000;
+  background:
+    radial-gradient(50% 70% at 50% 120%, var(--c)) top,
+    radial-gradient(70% 50% at -20% 50%, var(--c)) right,
+    radial-gradient(50% 70% at 50% -20%, var(--c)) bottom,
+    radial-gradient(70% 50% at 120% 50%, var(--c)) left;
+  background-size: 100% 50.1%,50.1% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask: radial-gradient(circle 5px,#0000 90%,#eb8382);
+  animation: l9 1.5s infinite linear;
+  margin-left: 500px;
+}
+@keyframes l9 { 
+  100%{transform: rotate(1turn)}
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 1;
+  margin-left: 300px;
+  -webkit-animation: 3.2s linear infinite flying;
+}
+@keyframes flying {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+}
+.main-image {
+  position: relative;
+  z-index: 0;
+}
+.contImg {
+  position: relative;
+  width: 300px;
+  margin-right: 500px;
+}
+.secondPage {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(https://live.verstaem.online/gogames/img/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.newVr {
+  margin-top: 80px;
+  max-width: 500px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 100px;
+}
+.thirdMain {
+  background-image: url(https://live.verstaem.online/gogames/img/about-pc-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: space-evenly ;
+}
+.thirdPage {
+  margin-top: 150px;
+  margin-left: 200px;
+}
+.cloud {
+  position: absolute;
+  width: 600px;
+  z-index: 1; 
+  margin-top: 60px;
+}
+.joystick {
+  margin-top: 180px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 530px;
+  -webkit-animation: 2s linear infinite flyingjoy;
+}
+@keyframes flyingjoy {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+.list1 {
+  position: absolute;
+  z-index: 0; 
+  width: 250px;
+  -webkit-animation: 3s linear infinite list1;
+}
+@keyframes list1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+.list2 {
+  position: absolute;
+  z-index: 0; 
+  width: 250px;
+  margin-left: 350px;
+  -webkit-animation: 3s linear infinite list2;
+}
+@keyframes list2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+.vintik1 {
+  position: absolute;
+  z-index: 1; 
+  margin-left: 300px;
+  -webkit-animation: 10s linear infinite vintik1;
+}
+@keyframes vintik1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.vintik2 {
+  position: absolute;
+  z-index: 1; 
+  margin-left: 230px;
+  margin-top: 70px;
+  -webkit-animation: 10s linear infinite vintik2;
+}
+@keyframes vintik2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.price {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  background-color: #fee9dc;
+  background-size: 100%;
+  padding-bottom: 50px;  
+}
+.plan {
+  text-align: center;
+}
+ul li {
+  list-style-type: none;
+}
+.priceUl {
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.price-item {
+  background-color: #fbdacf;
+  padding: 40px;
+  border-radius: 10%;
+  transform: 
+  translateY(15px)
+  scale(1.01);
+  transition: 1s linear all;
+
+  &:hover {
+    transform: 
+    scale(1.01)
+  }
+}
+
+.dol {
+  font-size: 25px;
+}
+.cent {
+  margin-left: 5px;
+  font-size: 45px;
+}
+.hour {
+  font-size: 25px;
+}
+.tickets {
+  color: #eb8382;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+.lis {
+  margin-top: 35px;
+  font-size: 18px;
+  color: #446381;
+  margin-right: 10px;
+}
+.main-item {
+  background-image: linear-gradient(
+  to bottom,
+  #446381,
+  #826f8c);
+
+  transform: 
+  translateY(15px)
+  scale(1.08);
+  transition: 1s linear all;
+
+  &:hover {
+    transform: 
+    scale(1.08)
+  }
+}
+.footer {
+  border-top: 1px solid #446381; 
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fee9dc; 
+}
+.copy {
+  color: #446381;
+
+}
+.foot {
+  align-items: center;
+  justify-content: space-around;
+}
+.fa-brands {
+  padding: 10px;
+  background-color: #fbdacf;
+  text-align: center;
+  width: 43px;
+  border-radius: 50%;
+  color: #446381;
+
+  transition: 0.2s linear all;
+
+  &:hover {
+    color: white;
+    background-color: #446381;
+  }
+}
